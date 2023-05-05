@@ -82,7 +82,7 @@ body {
   .notion-property__file, .notion-property__url {
     display: flex;
     align-items: center;
-    white-space: wrap;
+    /* white-space: wrap; */
   }
   
   .notion-collection-card__property-list 
@@ -95,7 +95,7 @@ body {
   }
   
   /* ------ References and Resources -------- */
-  
+
   #block-b647fb887a604c00a9f3e81640da77aa 
     .notion-collection-card .notion-property__title .notion-semantic-string{
     font-size: 28px;
@@ -153,12 +153,12 @@ body {
     /*font-family: "TheHandBold" !important;*/
     font-family: "TextaNarrowAlt-Heavy" !important; 
     font-weight: normal !important;
-    line-height: 0.9 em !important;
+    line-height: 0.9em !important;
     font-size: calc(0.8* var(--heading2-size))!important;
   }
   
   h3, h3.notion-heading {
-    font-family: var(--primary-font); !important;
+    font-family: var(--primary-font) !important;
     font-weight: 700 !important;
     font-size: calc(0.8* var(--heading3-size))!important;
   }
@@ -576,7 +576,6 @@ body {
   .notion-collection-list__item {
     background: var(--color-card-bg)!important;
     padding: var(--collection-card-content-padding)!important;
-  !important;
      box-shadow: var(--collection-card-shadow)!important;
     transition: 0.3s !important;
     margin-bottom: 1em!important;
@@ -736,7 +735,7 @@ body {
       font-size: calc(0.8 * var(--heading3-size)) !important;
     }
     .notion-callout .notion-quote {
-      font-size: var(--quote-size));
+      font-size: var(--quote-size);
       padding:0px !important;
     }
     .notion-callout .notion-quote.large {
