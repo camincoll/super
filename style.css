@@ -1,4 +1,820 @@
-/* New Stylesheet */ 
-.notion-callout {
-    display: none !important;
-}
+/* This Human Stylesheet */ 
+
+
+body {
+    font-family: "TextaNarrowAlt"; 
+    font-weight: 300 !important;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    letter-spacing: normal;
+  }
+  
+  :root {
+    /* --primary-font:"'Chronicle SSm A','Chronical SSm B'", Serif !important; */
+    --primary-font:"TextaNarrowAlt", Sans-Serif !important; 
+    --color-pill-default: #FCFCFC !important;
+  }
+  
+  html.theme-dark {
+    --color-bg-brown-light: hsl(
+      var(--brown-h),
+      var(--brown-s),
+      30%
+      );
+    --color-bg-blue-light: hsl(
+      var(--blue-h),
+      var(--blue-s),
+      22%
+      );
+    --color-bg-purple-light: hsl(
+      var(--purple-h),
+      var(--purple-s),
+      40%
+      );
+    --color-bg-red-light: hsl(
+      var(--red-h),
+      var(--red-s),
+      40%
+      );
+    --color-bg-pink-light: hsl(
+      var(--pink-h),
+      var(--pink-s),
+      75%
+      );
+  }
+  html.theme-light {
+    --color-bg-blue: hsl(
+    var(--blue-h),
+    var(--blue-s),
+    22%
+    );
+    --color-bg-gray: #FCFCFC;
+  }
+  
+  .notion-pill.pill-default {
+    color: black !important;
+    background: #DCDCDD !important;
+  }
+  
+  .notion-pill.pill-blue {
+    color: white !important;
+    background: #004F6E !important;
+  }
+  
+  .notion-property__file .notion-pill.pill-default {
+    color: black !important;
+    background: #fafafa !important;
+  }
+  
+  .notion-property__file:before {
+    content: url("https://super.so/icon/dark/download.svg");
+    display: inline-block;
+    margin-right : 5px;
+    height:25px;
+  }
+  .notion-property__url:before {
+    content: url("https://super.so/icon/dark/external-link.svg");
+    display: inline-block;
+    margin-right : 5px;
+    height:25px;
+  }
+  
+  .notion-property__file, .notion-property__url {
+    display: flex;
+    align-items: center;
+    white-space: wrap;
+  }
+  
+  .notion-collection-card__property-list 
+  .notion-property__file .notion-pill {
+    font-size: 20px !important;
+  }
+  .notion-collection-card__property-list 
+   .notion-pill {
+    font-size: .875rem !important;
+  }
+  
+  /* ------ References and Resources -------- */
+  
+  #block-b647fb887a604c00a9f3e81640da77aa 
+    .notion-collection-card .notion-property__title .notion-semantic-string{
+    font-size: 28px;
+    line-height: 1 !important;
+  }
+  #block-b647fb887a604c00a9f3e81640da77aa 
+  .notion-collection-card__property-list 
+   .notion-pill {
+    font-size: .75rem !important;
+  }
+  
+  #block-b647fb887a604c00a9f3e81640da77aa 
+  .notion-collection-card {
+      transition: width 0.9s ease, height 0.9s ease !important;
+    transition-delay: 1s !important;
+    animation: 1s ease-in-out!important;
+  }
+  
+  #block-b647fb887a604c00a9f3e81640da77aa 
+  .notion-collection-card__content .notion-property__text:first-of-type .notion-semantic-string {
+    line-height: 0.5 !important;
+    font-size: 0.8rem !important;
+  }
+  
+  #block-b647fb887a604c00a9f3e81640da77aa .notion-collection-card__content .notion-property__text {
+    white-space: nowrap;
+    max-height: 1.2em; /* Adjust the line-height to match your content */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 1;
+    transition: opacity 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), max-height 1s linear 1s; /* Add transition delay for max-height */
+  }
+  
+  #block-b647fb887a604c00a9f3e81640da77aa .notion-collection-card:hover .notion-property__text {
+    white-space: normal;
+    max-height: 1000px; /* Set a large enough value to accommodate expanded content */
+    opacity: 1;
+    text-overflow: clip; /* Reset text-overflow on hover to display full content */
+    display: block; /* Reset display property on hover */
+    transition: opacity 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) 0.5s, max-height 1s ease 0.5s; /* Remove transition delay for max-height on hover */
+  }
+  
+  
+  /*-------- Headings --------*/
+  
+  h1 {
+    font-family: "TextaNarrowAlt-Heavy" !important; 
+    font-weight: 900 !important;
+    font-size: calc(1.0* var(--heading1-size))!important;
+    color: #011627 !important;
+    line-height:0.8em !important;
+    letter-spacing: -9px!important;
+  }
+  h2, h2.notion-heading {
+    /*font-family: "TheHandBold" !important;*/
+    font-family: "TextaNarrowAlt-Heavy" !important; 
+    font-weight: normal !important;
+    line-height: 0.9 em !important;
+    font-size: calc(0.8* var(--heading2-size))!important;
+  }
+  
+  h3, h3.notion-heading {
+    font-family: var(--primary-font); !important;
+    font-weight: 700 !important;
+    font-size: calc(0.8* var(--heading3-size))!important;
+  }
+  .notion-semantic-string {
+    line-height: 1.0rem !important;
+  }
+  .notion-text p, .notion-list-item  {
+    line-height: 1em!important;
+  }
+  .notion-heading {
+      line-height: 1.35em!important;
+      letter-spacing: -0.02em!important;
+      padding: 0!important;
+      margin-bottom: 0.25em!important;
+  }
+  
+  .notion-text, .notion-bulleted-list {
+    margin-bottom: 0.5em!important;
+  }
+  
+  .notion-divider {
+    border-bottom: none!important;
+    margin: 4em 0!important;
+  }
+  
+  .notion-toggle {
+    padding: 1em!important;
+    border: 1px solid var(--color-border-default)!important;
+    border-radius: var(--callout-border-radii)!important;
+    margin-bottom: 1em!important;
+    transition: 0.3s!important;
+    box-shadow: var(--collection-card-shadow)!important;
+  }
+  
+  .notion-semantic-string .link {
+    border-bottom: 1px dashed var(--color-text-default);
+  }
+  /*--------- callout ---------*/
+  .notion-callout__content {
+    overflow: visible!important;
+  }
+  .notion-callout {
+    overflow: visible!important;
+    text-align: left !important;
+  }
+  
+  
+  .notion-heading, .notion-heading .notion-semantic-string {
+    line-height: 1em !important;
+  }
+  
+  .notion-semantic-string {
+    line-height: 1.3rem !important;
+  }
+  
+  .notion-text p {
+  line-height: 1.5em!important;
+  }
+  
+  
+  
+  /*--------- quote ---------*/
+  .notion-quote {
+    border: none!important;
+    padding:var(--callout-padding)!important;
+    text-align: center!important;
+    border-radius: var(--callout-border-radii)!important;
+    line-height: 1.2em !important;
+    letter-spacing: -0.02em!important;
+  }
+  
+  .notion-quote p{
+    font-family: var(--secondary-font)!important;
+  }
+  
+  
+  /*-------- Buttons -------- */
+  .highlighted-background a{
+      padding: 0.5em 2em!important;
+      border: none!important;
+      opacity: 1!important;
+      border-radius: var(--callout-border-radii)!important;
+      color: var(--navbar-button-text-color)!important;
+      display: inline-block!important;
+      text-align: center!important;
+    font-weight:600 !important;
+  }
+  .highlighted-background:has(a) {
+        background: none!important;
+  }
+  
+  .highlighted-background.bg-gray a {
+      background-color: var(--color-gray)!important;
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--gray-h), var(--gray-s), var(--gray-l), 0.1)!important;  
+      transition: 0.2s!important;
+  }
+  .highlighted-background.bg-gray a:hover{
+      background-color: hsla(var(--gray-h), var(--gray-s), calc(var(--gray-l) + 10%))!important;
+        -webkit-box-shadow: 0em 1em 1em 0em hsla(var(--gray-h), var(--gray-s), var(--gray-l), 0.5)!important;  
+        
+  }
+  .highlighted-background.bg-gray a:active {
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--gray-h), var(--gray-s), var(--gray-l), 0.1)!important;  
+      transition: 0.2s!important;
+  }
+  
+  .highlighted-background.bg-brown a {
+      background-color: var(--color-brown)!important;
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--brown-h), var(--brown-s), var(--brown-l), 0.1)!important;  
+      transition: 0.2s!important;
+  }
+  .highlighted-background.bg-brown a:hover{
+      background-color: hsla(var(--brown-h), var(--brown-s), calc(var(--brown-l) + 10%))!important;
+        -webkit-box-shadow: 0em 1em 1em 0em hsla(var(--brown-h), var(--brown-s), var(--brown-l), 0.3)!important;  
+  }
+  .highlighted-background.bg-brown a:active {
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--brown-h), var(--brown-s), var(--brown-l), 0.1)!important;  
+      transition: 0.2s!important;
+  }
+  
+  .highlighted-background.bg-orange a {
+      background-color: var(--color-orange)!important;
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--orange-h), var(--orange-s), var(--orange-l), 0.1)!important;  
+      transition: 0.2s!important;
+      color: var(--color-text-blue) !important;
+  }
+  .highlighted-background.bg-orange a:hover{
+      background-color: hsla(var(--orange-h), var(--orange-s), calc(var(--orange-l) + 10%))!important;
+        -webkit-box-shadow: 0em 1em 1em 0em hsla(var(--orange-h), var(--orange-s), var(--orange-l), 0.3)!important;  
+  }
+  .highlighted-background.bg-orange a:active {
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--orange-h), var(--orange-s), var(--orange-l), 0.1)!important;  
+      transition: 0.2s!important;
+  }
+  
+  .highlighted-background.bg-yellow a {
+      background-color: var(--color-yellow)!important;
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--yellow-h), var(--yellow-s), var(--yellow-l), 0.1)!important;  
+      transition: 0.2s!important;
+  }
+  .highlighted-background.bg-yellow a:hover{
+      background-color: hsla(var(--yellow-h), var(--yellow-s), calc(var(--yellow-l) + 10%))!important;
+        -webkit-box-shadow: 0em 1em 1em 0em hsla(var(--yellow-h), var(--yellow-s), var(--yellow-l), 0.3)!important;  
+  }
+  .highlighted-background.bg-yellow a:active {
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--yellow-h), var(--yellow-s), var(--yellow-l), 0.1)!important;  
+      transition: 0.2s!important;
+  }
+  
+  .highlighted-background.bg-green a {
+      background-color: var(--color-green)!important;
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--green-h), var(--green-s), var(--green-l), 0.1)!important;  
+      transition: 0.2s!important;
+  }
+  .highlighted-background.bg-green a:hover{
+      background-color: hsla(var(--green-h), var(--green-s), calc(var(--green-l) + 10%))!important;
+        -webkit-box-shadow: 0em 1em 1em 0em hsla(var(--green-h), var(--green-s), var(--green-l), 0.3)!important;  
+  }
+  .highlighted-background.bg-green a:active {
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--green-h), var(--green-s), var(--green-l), 0.1)!important;  
+      transition: 0.2s!important;
+  }
+  
+  .highlighted-background.bg-blue a {
+      background-color: var(--color-blue)!important;
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--blue-h), var(--blue-s), var(--blue-l), 0.1)!important;  
+      transition: 0.2s!important;
+      color: #FDFFFC !important;
+  }
+  .highlighted-background.bg-blue a:hover{
+      background-color: hsla(var(--blue-h), var(--blue-s), calc(var(--blue-l) + 10%))!important;
+        -webkit-box-shadow: 0em 1em 1em 0em hsla(var(--blue-h), var(--blue-s), var(--blue-l), 0.3)!important;  
+        
+  }
+  .highlighted-background.bg-blue a:active {
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--blue-h), var(--blue-s), var(--blue-l), 0.3)!important;  
+      transition: 0.2s!important;
+  }
+  
+  .highlighted-background.bg-purple a {
+      background-color: var(--color-purple)!important;
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--purple-h), var(--purple-s), var(--purple-l), 0.1)!important;  
+      transition: 0.2s!important;
+  }
+  .highlighted-background.bg-purple a:hover{
+      background-color: hsla(var(--purple-h), var(--purple-s), calc(var(--purple-l) + 10%))!important;
+        -webkit-box-shadow: 0em 1em 1em 0em hsla(var(--purple-h), var(--purple-s), var(--purple-l), 0.3)!important;  
+  }
+  .highlighted-background.bg-purple a:active {
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--purple-h), var(--purple-s), var(--purple-l), 0.1)!important;  
+      transition: 0.2s!important;
+  }
+  
+  .highlighted-background.bg-pink a {
+      background-color: var(--color-pink)!important;
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--pink-h), var(--pink-s), var(--pink-l), 0.1)!important;  
+      transition: 0.2s!important;
+  }
+  .highlighted-background.bg-pink a:hover{
+      background-color: hsla(var(--pink-h), var(--pink-s), calc(var(--pink-l) + 10%))!important;
+        -webkit-box-shadow: 0em 1em 1em 0em hsla(var(--pink-h), var(--pink-s), var(--pink-l), 0.3)!important;  
+  }
+  .highlighted-background.bg-pink a:active {
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--pink-h), var(--pink-s), var(--pink-l), 0.1)!important;  
+      transition: 0.2s!important;
+  }
+  
+  .highlighted-background.bg-red a {
+      background-color: var(--color-red)!important;
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--red-h), var(--red-s), var(--red-l), 0.1)!important;  
+      transition: 0.2s!important;
+  }
+  .highlighted-background.bg-red a:hover{
+      background-color: hsla(var(--red-h), var(--red-s), calc(var(--red-l) + 10%))!important;
+        -webkit-box-shadow: 0em 1em 1em 0em hsla(var(--red-h), var(--red-s), var(--red-l), 0.3)!important;  
+  }
+  .highlighted-background.bg-red a:active {
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--red-h), var(--red-s), var(--red-l), 0.1)!important;  
+      transition: 0.2s!important;
+  }
+  
+  .highlighted-color a{
+      padding: 0.5em 2em!important;
+      border: solid 2px!important;
+      opacity: 1!important;
+      border-radius: var(--callout-border-radii)!important;
+      display: inline-block!important;
+      text-align: center!important;
+    font-weight:600 !important;
+  
+    opacity:1 !important;
+  }
+  .highlighted-color:has(a) {
+        background: none!important;
+  }
+  
+  
+  .highlighted-color.color-green a {
+      border-color: var(--color-green)!important;
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--green-h), var(--green-s), var(--green-l), 0.1)!important;  
+      transition: 0.2s!important;
+      background-color:white !important;
+  }
+  .highlighted-color.color-green a:hover{
+      color: hsla(var(--green-h), var(--green-s), calc(var(--green-l) + 10%))!important;
+        -webkit-box-shadow: 0em 1em 1em 0em hsla(var(--green-h), var(--green-s), var(--green-l), 0.3)!important;  
+  }
+  .highlighted-color.color-green a:active {
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--green-h), var(--green-s), var(--green-l), 0.1)!important;  
+      transition: 0.2s!important;
+  }
+  .highlighted-color.color-blue a {
+      border-color: var(--color-blue)!important;
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--blue-h), var(--blue-s), var(--blue-l), 0.1)!important;  
+      transition: 0.2s!important;
+      background-color:white !important;
+  }
+  .highlighted-color.color-blue a:hover{
+      color: hsla(var(--blue-h), var(--blue-s), calc(var(--blue-l) + 10%))!important;
+        -webkit-box-shadow: 0em 1em 1em 0em hsla(var(--blue-h), var(--blue-s), var(--blue-l), 0.3)!important;  
+  }
+  .highlighted-color.color-blue a:active {
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--blue-h), var(--blue-s), var(--blue-l), 0.1)!important;  
+      transition: 0.2s!important;
+  }
+  
+  /* Database common */
+  .notion-property__title .notion-semantic-string 
+  {
+    font-weight: 600 !important;
+  }
+  
+  .notion-collection-group__section-header > .notion-property {
+    margin-left: 10px!important;
+  }
+  
+  
+  .notion-collection-group__section .notion-collection-group__section-header > .notion-property {
+    max-width: 85% !important;
+  }
+  .notion-collection-group__section-header > .notion-property > .notion-pill {
+   white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis!important;
+    max-width: 100% !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+  }
+  
+  /* -- GALLERY DATABASE  -- */
+  
+  .notion-collection-card img{
+    transition: 1s ease-out!important;
+  }
+  
+  .notion-collection-card{
+    transition: 0.3s ease-out!important;
+  }
+  
+  .notion-collection-card:hover img {
+    transform: scale(1.2)!important;
+    animation: 1s ease-in-out!important;
+  }
+  
+  
+  .notion-collection-card__content .notion-property__text .notion-semantic-string {
+    overflow-x: visible;
+    overflow-y: visible;
+    white-space: normal;
+    text-overflow: initial;
+    display: inline;
+    line-height:0.8em !important;
+    font-size:var(--text-size) !important;
+  }
+  
+  .notion-collection-card__content .notion-property__select {
+    overflow: visible !important;
+    white-space: normal !important;
+    text-overflow: initial !important;
+    display: inline !important;
+  }
+  .notion-collection-card__cover {
+    border-radius-top:var(--collection-card-border-radii)!important;
+  }
+  
+  .notion-collection-card__property {
+    margin-bottom: 8px !important;
+  }
+  
+  .notion-property {
+    font-size: 0.875rem;
+  }
+  
+  /*---------  BOARD DATABASE (TESTIMONIALS) ---------*/
+  
+  
+  .notion-collection-board__item:hover {
+    transform: scale(1.01)!important;
+  }
+  
+  
+  .notion-collection-board {
+    grid-template-columns: repeat( auto-fit, minmax(120px, 1fr) )!important;
+    border: none!important;
+    overflow: visible!important;
+  }
+  
+  .notion-collection-board__item {
+      margin-bottom: var(--collection-card-gap)!important;
+      transition: 0.3s ease-out!important;
+  }
+  
+  .board .notion-collection-card__content {
+      padding-inline-end: var(--padding-layout)!important;
+  }
+  
+  
+  .notion-collection-board__column {
+      border-radius: var(--border-radii-layout)!important;
+  }
+  
+  
+  
+  /*---------  TABLE DATABASE ---------*/
+  
+  
+  .notion-collection-table {
+    font-size: 1rem!important;
+    border: 1px solid var(--color-border-default)!important;
+    border-radius: var(--border-radii-layout)!important;
+    overflow: hidden!important;
+    padding: 1em!important;
+    margin-bottom: 0!important;
+  }
+  
+  .notion-collection-table__wrapper{
+    border: 1px solid var(--color-border-default)!important;
+    padding: 0em!important;
+    border-radius: var(--callout-border-radii)!important;
+  }
+  
+  
+  .notion-collection-table td, .notion-collection-table th {
+      padding: 1rem!important;
+      border: 1px solid var(--color-border-default)!important;
+      overflow: hidden!important;
+      background: var(--color-bg-default)!important;
+  
+  }
+  
+  .notion-collection-table__head {
+    background-color: var(--color-ui-hover-bg-light)!important;
+  }
+  
+  .notion-collection-table__cell {
+    padding: 1rem!important;
+  }
+  
+  .notion-collection-table__cell .notion-pill {
+    margin-bottom: 0.5rem!important;
+  }
+  
+  .notion-collection-table__cell.title .notion-semantic-string {
+      white-space: normal!important;
+  }
+  
+  
+  /*---------  LIST   ---------*/
+  .notion-collection-list {
+    border: none!important;
+    border-radius: var(--border-radii-layout)!important;
+    overflow: visible!important;
+  }
+  
+  .notion-collection-list__item {
+    background: var(--color-card-bg)!important;
+    padding: var(--collection-card-content-padding)!important;
+  !important;
+     box-shadow: var(--collection-card-shadow)!important;
+    transition: 0.3s !important;
+    margin-bottom: 1em!important;
+  }
+  
+  .notion-collection-list__item .notion-property__title 
+  {
+    font-size: var(--collection-card-title-size)!important;
+  }
+  
+  
+  .notion-collection-list__item:hover {
+  
+      transform: scale(1.01)!important;
+  }
+  
+  
+  
+  .notion-collection-list__item .notion-property__title .notion-semantic-string > span {
+  border-bottom: none!important;
+  white-space: normal!important;
+  }
+  
+  
+  .notion-property__number__progress-bar {
+  
+      width: 4em!important;
+      height: 0.5em!important;
+  }
+  
+  
+  /*---------  Simple TABLE ---------*/
+  
+  
+  .notion-table {
+    font-size: 1rem!important;
+    overflow: hidden!important;
+    padding: var(--callout-padding)!important;
+  
+  }
+  
+  
+  
+  .notion-table td, .notion-table th {
+      padding: 1rem!important;
+      overflow: hidden!important;
+  
+  }
+  
+  
+  /*---------  TABLE OF CONTENTS  ---------*/
+  
+  .notion-table-of-contents {
+    padding: var(--border-radii-layout)!important;
+    margin: 1em 0!important;
+    border-radius: var(--callout-border-radii)!important;
+    border: 1px solid var(--color-border-default)!important;
+  }
+  
+  .notion-table-of-contents.bg-yellow, .notion-table-of-contents.bg-yellow, .notion-table-of-contents.bg-orange, .notion-table-of-contents.bg-gray, .notion-table-of-contents.bg-brown, .notion-table-of-contents.bg-green, .notion-table-of-contents.bg-blue, .notion-table-of-contents.bg-purple, .notion-table-of-contents.bg-pink,.notion-table-of-contents.bg-red{
+    border: none!important;
+  }
+  
+  
+  
+  .notion-table-of-contents__item {
+      border-radius: 4px!important;
+      padding-left: 0.5em!important;
+  }
+  
+  .notion-table-of-contents__item .notion-semantic-string:not(.no-border) {
+      background: none!important;
+  }
+  
+  
+  /*-------- Footer --------*/
+  
+  .super-footer.floating {
+      border-radius: var(--border-radii-layout)!important;
+      align-self: center!important;
+      width: calc(100vw - var(--column-spacing))!important;
+      max-width: calc(var(--layout-max-width) - var(--column-spacing))!important;
+  }
+  
+  /*-------- BLOCK LABEL --------*/
+  span .highlighted-background.bg-gray {
+    color:white;
+    background-color: #011627;
+    font-family: "TextaNarrowAlt-Heavy";
+    text-transform: uppercase;
+    letter-spacing: 0px !important;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 0px !important;
+    padding-bottom: 2px !important;
+    border-radius: 4px !important;
+  }
+  
+  /*-------- PILLS --------*/
+  .notion-pill {
+      font-weight: 600;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 0px !important;
+    padding-bottom: 2px !important;
+    border-radius: 4px !important;
+    color: white !important;
+  }
+  
+  .pill-gray {
+    background: black;
+    text-transform: uppercase;
+  }
+  .pill-green {
+    text-transform: uppercase;
+      background-color: var(--color-green)!important;
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--green-h), var(--green-s), var(--green-l), 0.1)!important;  
+      transition: 0.2s!important;
+  }
+  
+  
+  .highlighted-background.bg-green a:hover{
+      background-color: hsla(var(--green-h), var(--green-s), calc(var(--green-l) + 10%))!important;
+        -webkit-box-shadow: 0em 1em 1em 0em hsla(var(--green-h), var(--green-s), var(--green-l), 0.3)!important;  
+  }
+  .highlighted-background.bg-green a:active {
+      -webkit-box-shadow: 0em 0.5em 0.5em 0em hsla(var(--green-h), var(--green-s), var(--green-l), 0.1)!important;  
+      transition: 0.2s!important;
+  }
+  
+  .notion-column-list .notion-callout {
+    height: 100% !important;
+  }
+  
+  .super-navbar__cta {
+    font-size: 23px !important;
+  }
+  
+  @media (max-width:840px){
+    /*-------- Text Formatting -------- */
+    .notion-semantic-string {
+      line-height: 1.0rem !important;
+    }
+    .notion-text p, .notion-list-item  {
+      line-height: 1.2em!important;
+    }
+    .notion-quote {
+      margin-bottom: 1em !important;
+    }
+    h1,  h1.notion-heading {
+      font-size: calc(0.7 * var(--heading1-size))!important;
+    }
+     h2,  h2.notion-heading {
+      font-size: calc(0.7 * var(--heading2-size))!important;
+    }
+    h3, h3.notion-heading {
+      font-size: calc(0.8 * var(--heading3-size)) !important;
+    }
+    .notion-callout .notion-quote {
+      font-size: var(--quote-size));
+      padding:0px !important;
+    }
+    .notion-callout .notion-quote.large {
+      font-size: calc(0.8 * var(--quote-size-large));
+      padding:0px !important;
+    }
+    .notion-callout .notion-quote {
+      text-align:left !important;
+        font-size: calc(0.8 * var(--quote-size));
+  }
+  
+    .notion-callout, .notion-callout .notion-callout {
+      padding: 15px;
+      padding-top: 25px;
+    }
+    .notion-collection-group__section-header > .notion-property {
+      margin-left: 0px!important;
+    } 
+  /*--------- NAVBAR ---------*/
+    .super-navbar {
+      max-width: var(--layout-max-width)!important;
+      backdrop-filter: blur(36px)!important;
+      height: 3.5em!important;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,.5);
+    }
+    .super-navbar__cta {
+        padding: 0.25em .5em!important;
+        border-radius: var(--callout-border-radii)!important;
+        transition: 0.1s ease-in-out!important;
+          font-weight:700 !important;
+    }
+    .super-navbar__logo-image {
+      width: 100% !important;
+    }
+    .super-navbar__cta {
+      font-size: 23px !important;
+    }
+  }
+  
+  @media (min-width:840px){
+    .notion-callout .notion-quote:not(.large) {
+      text-align: left !important;
+      padding-left: 0px !important;
+      padding-top: 0px !important;
+    }
+  /*--------- NAVBAR ---------*/
+    .super-navbar {
+      /*max-width: var(--layout-max-width)!important;*/
+      width: calc(100% - var(--column-spacing))!important;
+      margin: 1em auto !important;
+      width: calc(100% - var(--column-spacing))!important;
+      border-radius: var(--border-radii-layout)!important;
+      top: 1em!important;
+      backdrop-filter: blur(36px)!important;
+      height: 3.5em!important;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,.5);
+    }
+    .super-navbar__cta {
+        padding: 0.35em 1em!important;
+        border-radius: var(--callout-border-radii)!important;
+        transition: 0.1s ease-in-out!important;
+        font-weight:700 !important;
+    }
+    
+    .super-navbar__list-item-heading {
+      font-size: 22px !important;
+    }
+    .super-navbar__list-item-description {
+      font-size: 18px !important;
+    }
+    .super-navbar__list-item-icon svg {
+      width: 20px !important;
+      height: 20px !important;
+    }
+  }
+  
+  
