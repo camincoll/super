@@ -1,1 +1,4 @@
-/* New Stylesheet */
+/* New Stylesheet */ 
+.notion-callout {
+    display: none !important;
+}
