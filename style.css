@@ -50,6 +50,11 @@ body {
     22%
     );
     --color-bg-gray: #FCFCFC;
+    --color-bg-blue-light: hsl(
+        var(--blue-h),
+        var(--blue-s),
+        22%
+        );
   }
   
   .notion-pill.pill-default {
@@ -762,7 +767,7 @@ body {
       height: 3.5em!important;
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
-      background: rgba(255,255,255,.5);
+      background: rgba(255,255,255,.5) !important;
     }
     .super-navbar__cta {
         padding: 0.25em .5em!important;
@@ -796,7 +801,7 @@ body {
       height: 3.5em!important;
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
-      background: rgba(255,255,255,.5);
+      background: rgba(255,255,255,.5) !important;
     }
     .super-navbar__cta {
         padding: 0.35em 1em!important;
