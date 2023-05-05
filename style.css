@@ -12,6 +12,7 @@ body {
   :root {
     /* --primary-font:"'Chronicle SSm A','Chronical SSm B'", Serif !important; */
     --primary-font:"TextaNarrowAlt", Sans-Serif !important; 
+    --secondary-font:"TextaNarrowAlt", Sans-Serif !important; 
     --color-pill-default: #FCFCFC !important;
   }
   
