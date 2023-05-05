@@ -48,14 +48,14 @@ body {
     var(--blue-h),
     var(--blue-s),
     22%
-    );
-    --color-bg-gray: #FCFCFC;
-    --color-bg-gray-light: #FCFCFC;
+    ) !important;
+    --color-bg-gray: #FCFCFC !important;
+    --color-bg-gray-light: #FCFCFC !important;
     --color-bg-blue-light: hsl(
         var(--blue-h),
         var(--blue-s),
         22%
-        );
+        ) !important;
   }
   
   .notion-pill.pill-default {
