@@ -50,6 +50,7 @@ body {
     22%
     );
     --color-bg-gray: #FCFCFC;
+    --color-bg-gray-light: #FCFCFC;
     --color-bg-blue-light: hsl(
         var(--blue-h),
         var(--blue-s),
