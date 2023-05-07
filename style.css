@@ -188,7 +188,7 @@ body {
   
   .notion-divider {
     border-bottom: none!important;
-    margin: 4em 0!important;
+    margin: 5em 0!important;
   }
   
   .notion-toggle {
@@ -521,7 +521,7 @@ body {
     display: inline !important;
   }
   .notion-collection-card__cover {
-    border-radius-top:var(--collection-card-border-radii)!important;
+    border-radius:var(--collection-card-border-radii)!important;
   }
   
   .notion-collection-card__property {
