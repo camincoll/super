@@ -56,7 +56,7 @@ body {
         ) !important;
     --color-bg-gray: #FCFCFC !important;
     --color-bg-gray-light: #FCFCFC !important;
-    --color-pill-gray: #DCDCDD !important
+    --color-pill-gray: #011627 !important /* Purple black */
   }
   
   .notion-pill.pill-default {
