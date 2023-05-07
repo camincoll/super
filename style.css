@@ -49,13 +49,14 @@ body {
     var(--blue-s),
     22%
     ) !important;
-    --color-bg-gray: #FCFCFC !important;
-    --color-bg-gray-light: #FCFCFC !important;
     --color-bg-blue-light: hsl(
         var(--blue-h),
         var(--blue-s),
         22%
         ) !important;
+    --color-bg-gray: #FCFCFC !important;
+    --color-bg-gray-light: #FCFCFC !important;
+    --color-pill-gray: #DCDCDD !important
   }
   
   .notion-pill.pill-default {
@@ -757,7 +758,7 @@ body {
     font-size: 23px !important;
   }
   
-  @media (max-width:840px){
+  @media (max-width:839px){
     /*-------- Text Formatting -------- */
     .notion-semantic-string {
       line-height: 1.0rem !important;
