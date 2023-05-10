@@ -532,6 +532,11 @@ body {
   .notion-property {
     font-size: 0.875rem;
   }
+
+  .gallery .notion-collection-card__property .notion-semantic-string {
+    white-space: normal !important;
+    line-height: 1.2em !important;
+    }
   
   /*---------  BOARD DATABASE (TESTIMONIALS) ---------*/
   
