@@ -865,4 +865,8 @@ body {
     }
   }
   
+  .notion-video video {
+    border-radius: var(--callout-border-radii)!important;
+  }
+    
   
