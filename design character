@@ -1,0 +1,287 @@
+.super-content-wrapper {
+  flex-grow: 1;
+  position: relative;
+  top: -160px;
+}
+
+.notion-header.page {
+  margin-bottom: 0px !important;
+}
+
+html.theme-light {
+  --color-bg-blue: hsl(var(--blue-h), var(--blue-s), 22%);
+  --color-bg-blue: #011627 !important;
+  --color-bg-green: #94D4CA !important;
+  --color-bg-pink: #F59087 !important;
+  --color-bg-red: #9F4A54 !important;
+  --color-bg-orange: #E8C6A9 !important;
+  --color-bg-yellow: #ECDCB0 !important;
+  --color-bg-purple: #C191A1 !important;
+}
+
+#page-design-character-course .notion-root > .notion-callout h1,
+#page-design-character-course .notion-root > .notion-callout h1.notion-heading,
+#page-design-character-course .notion-root > .notion-callout h1.notion-heading .notion-semantic-string,
+#page-design-character-course .notion-root > .notion-callout h2,
+#page-design-character-course .notion-root > .notion-callout h2.notion-heading,
+#page-design-character-course .notion-root > .notion-callout h2.notion-heading .notion-semantic-string,
+#page-design-character-course .notion-root > .notion-callout h3,
+#page-design-character-course .notion-root > .notion-callout h3.notion-heading,
+#page-design-character-course .notion-root > .notion-callout h3.notion-heading .notion-semantic-string {
+  font-family: "TextaNarrowAlt-Heavy" !important;
+  font-weight: 700 !important;
+  color: #011627 !important;
+  line-height: 0.8em !important;
+}
+
+#page-design-character-course .notion-root > .notion-callout h1,
+#page-design-character-course .notion-root > .notion-callout h1.notion-heading,
+#page-design-character-course .notion-root > .notion-callout h1.notion-heading .notion-semantic-string {
+  font-size: 200px !important;
+  letter-spacing: -9px !important;
+  margin-block-start: 0.3em;
+}
+
+#page-design-character-course .notion-root > .notion-callout h2,
+#page-design-character-course .notion-root > .notion-callout h2.notion-heading,
+#page-design-character-course .notion-root > .notion-callout h2.notion-heading .notion-semantic-string {
+  font-size: 100px !important;
+  letter-spacing: -4px !important;
+}
+
+#page-design-character-course .notion-root > [class^='notion-callout bg-'] h3,
+#page-design-character-course .notion-root > [class^='notion-callout bg-'].notion-heading,
+#page-design-character-course .notion-root > [class^='notion-callout bg-'] h3.notion-heading .notion-semantic-string {
+  font-size: 60px !important;
+}
+
+#page-design-character-course .notion-root >  [class^='notion-callout bg-'] {
+  min-height: 100vh;
+}
+
+#page-design-character-course .notion-root >  .notion-callout:first-of-type {
+  margin-top: 0px !important;
+  /*padding-top: 10vh !important;*/
+}
+
+#page-design-character-course .notion-root >  .notion-callout:first-of-type h3 {
+  text-align: center !important;
+}
+
+#page-design-character-course .notion-root >  .notion-callout:first-of-type h3 + .notion-text {
+  text-align: center !important;
+  margin-top: 4vh;
+}
+
+#page-design-character-course .notion-root > .notion-callout .notion-column-list .notion-text {
+  margin-bottom: 0px !important;
+}
+
+#page-design-character-course .notion-root > [class^='notion-callout bg-'] .notion-column-list .notion-image {
+  margin-top: auto !important;
+}
+
+#page-design-character-course .notion-root > [class^='notion-callout bg-'] .notion-column-list .notion-column {
+  margin-top: auto !important;
+}
+#page-design-character-course .notion-root > [class^='notion-callout bg-'] > .notion-callout__content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+   
+ }
+ 
+ #page-design-character-course .notion-quote.large {
+   margin-top:0px !important;
+   padding-top:0px !important;
+ }
+ 
+ /* CTA Block */
+ 
+  /*#page-design-character-course #block-6a9f2f23fbf940a1832df4fe01f75466 > .notion-callout, #page-design-character-course .super-content #block-966d40ac81184661a4c89180e8fb9643, #page-design-character-course #block-8176b8b7fe9f44d69398e5a277ae03de {*/
+  /*   height: 100% !important;*/
+  /*  min-height:auto;*/
+  /*}*/
+
+ /*#page-design-charac ter-course #block-6a9f2f23fbf940a1832df4fe01f75466 > .notion-callout__content,*/
+ 
+#page-design-character-course #block-966d40ac81184661a4c89180e8fb9643 > .notion-callout__content, #page-design-character-course  #block-cda5fd3099234f1cb299b76c56f2bad8 > .notion-callout__content, #page-design-character-course #block-8176b8b7fe9f44d69398e5a277ae03de > .notion-callout__content {
+  display: block;
+  position: static;
+  transform: none;
+ }
+#page-design-character-course .notion-root > .notion-callout
+ h2.notion-heading.color-gray .notion-semantic-string, #page-design-character-course .notion-root > .notion-callout
+ h3.notion-heading.color-gray .notion-semantic-string  {
+  color: var(--color-text-gray) !important;
+}
+
+@media (max-height: 768px) {
+  #page-design-character-course .notion-root > .notion-callout h1,
+  #page-design-character-course .notion-root > .notion-callout h1.notion-heading,
+  #page-design-character-course .notion-root > .notion-callout h1.notion-heading .notion-semantic-string {
+    font-size: 105px !important;
+    letter-spacing: -4px !important;
+    margin-top: 10vh !important;
+  }
+
+  #page-design-character-course .notion-root > .notion-callout h2,
+  #page-design-character-course .notion-root > .notion-callout h2.notion-heading,
+  #page-design-character-course .notion-root > .notion-callout h2.notion-heading .notion-semantic-string {
+    font-size: 60px !important;
+    letter-spacing: -1px !important;
+  }
+
+  #page-design-character-course .notion-root > .notion-callout h3,
+  #page-design-character-course .notion-root > .notion-callout h3.notion-heading,
+  #page-design-character-course .notion-root > .notion-callout h3.notion-heading .notion-semantic-string {
+    font-size: 40px !important;
+    letter-spacing: -1px !important;
+  }
+
+  .super-content-wrapper {
+    flex-grow: 1;
+    position: relative;
+    top: -155px;
+  }
+}
+
+/*TABLET*/
+@media (max-width: 1399px) {
+   #page-design-character-course .notion-root > .notion-callout h1,
+  #page-design-character-course .notion-root > .notion-callout h1.notion-heading,
+  #page-design-character-course .notion-root > .notion-callout h1.notion-heading .notion-semantic-string {
+    font-size: 85px !important;
+    letter-spacing: -4px !important;
+    /*text-align: center !important;*/
+  }
+  
+  #page-design-character-course .notion-root > .notion-callout h2,
+  #page-design-character-course .notion-root > .notion-callout h2.notion-heading,
+  #page-design-character-course .notion-root > .notion-callout h2.notion-heading .notion-semantic-string {
+    font-size: 45px !important;
+    line-height: 0.8em !important;
+    letter-spacing: -1px !important;
+    /*text-align: center !important;*/
+  }
+
+  #page-design-character-course .notion-root > .notion-callout h3,
+  #page-design-character-course .notion-root > .notion-callout h3.notion-heading,
+  #page-design-character-course .notion-root > .notion-callout h3.notion-heading .notion-semantic-string {
+    font-size: 30px !important;
+    letter-spacing: -1px !important;
+    /*text-align: center !important;*/
+    line-height: 0.9em !important;
+  }
+  
+  #page-design-character-course h3, #page-design-character-course h3.notion-heading {
+    font-size: calc(0.6 * var(--heading3-size)) !important;
+  }
+}
+
+/* MOBILE */
+
+
+@media (max-width: 840px) {
+  .super-navbar__cta {
+    font-size: 23px;
+  }
+
+  .super-content-wrapper {
+    flex-grow: 1;
+    position: relative;
+    top: -100px;
+  }
+
+  #page-design-character-course .notion-root >  .notion-callout .notion-callout__content {
+    min-width: 240px !important;
+    width: 100vw !important;
+    padding-top: 20px !important;
+    padding-left: 10px !important;
+    padding-right: 19px !important;
+  }
+
+  #page-design-character-course .notion-root > .notion-callout h1,
+  #page-design-character-course .notion-root > .notion-callout h1.notion-heading,
+  #page-design-character-course .notion-root > .notion-callout h1.notion-heading .notion-semantic-string {
+    font-size: 85px !important;
+    letter-spacing: -4px !important;
+    text-align: center !important;
+}
+
+  #page-design-character-course .notion-root > .notion-callout h2,
+  #page-design-character-course .notion-root > .notion-callout h2.notion-heading,
+  #page-design-character-course .notion-root > .notion-callout h2.notion-heading .notion-semantic-string {
+    font-size: 45px !important;
+    line-height: 0.8em !important;
+    letter-spacing: -1px !important;
+    text-align: center !important;
+  }
+
+  #page-design-character-course .notion-root > .notion-callout h3,
+  #page-design-character-course .notion-root > .notion-callout h3.notion-heading,
+  #page-design-character-course .notion-root > .notion-callout h3.notion-heading .notion-semantic-string {
+    font-size: 30px !important;
+    letter-spacing: -1px !important;
+    text-align: center !important;
+    line-height: 0.9em !important;
+  }
+
+#page-design-character-course h3, #page-design-character-course h3.notion-heading {
+  font-size: calc(0.6 * var(--heading3-size)) !important;
+}
+
+#page-design-character-course .notion-quote.large {
+  font-size: calc(0.8 * var(--quote-size-large));
+  padding-left:0px !important;
+  padding-right:0px !important;
+}
+  
+  #page-design-character-course .notion-root > [class^='notion-callout bg-'] .notion-semantic-string {
+    font-size: 22px !important;
+    letter-spacing: -0.5px !important;
+    text-align: center !important;
+}
+
+  #page-design-character-course .notion-root > [class^='notion-callout bg-'] img {
+    max-height: 20vh !important;
+    height: 20vh !important;
+  }
+
+  #page-design-character-course .notion-root > [class^='notion-callout bg-'] .notion-column-list .notion-text {
+    text-align: center !important;
+  }
+ #page-design-character-course .notion-root > [class^='notion-callout bg-'] .notion-column-list {
+      flex-direction: reverse !important;
+   }
+
+#page-design-character-course .notion-root > [class^='notion-callout bg-'] > .notion-callout__content {
+  position: relative;
+  top: 0%;
+  -webkit-transform: translateY(0%) translateX(0%);
+  -ms-transform: translateY(0%) translateX(0%);
+  left: 0%;
+  transform: translateY(0%) translateX(0%);
+  padding-left: 20px !important; 
+  padding-top: 100px !important;
+  
+}
+  #page-design-character-course .notion-root >  [class^='notion-callout bg-'] > .notion-callout__content {
+    flex-grow: 1 !important;
+    height: 100% !important;
+  }
+}
+
+#page-design-character-course .notion-image {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#block-51ab9b173cd04629bc15e52e65e448a1.notion-image.normal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

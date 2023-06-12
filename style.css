@@ -124,7 +124,6 @@ body {
   
   #block-b647fb887a604c00a9f3e81640da77aa 
   .notion-collection-card__content .notion-property__text:first-of-type .notion-semantic-string {
-    line-height: 0.5 !important;
     font-size: 0.8rem !important;
   }
   
